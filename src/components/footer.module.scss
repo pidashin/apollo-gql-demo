@@ -1,0 +1,19 @@
+@import '../common.scss';
+
+.container {
+  flex-shrink: 0;
+  margin-top: auto;
+  background-color: white;
+  color: $textSecondary;
+  position: sticky;
+  bottom: 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  max-width: 460px;
+  padding: $unit * 2.5;
+  margin: 0 auto;
+}
+

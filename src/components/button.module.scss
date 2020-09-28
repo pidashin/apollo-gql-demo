@@ -1,0 +1,30 @@
+@import '../common.scss';
+
+$h: 50px;
+
+.btn {
+  display: block;
+  min-width: 200px;
+  height: $h;
+  margin: 0 auto;
+  padding: 0 $unit / 4;
+  border: none;
+  border-radius: $h / 2;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: $h;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  background-color: $accent;
+  cursor: pointer;
+  outline: none;
+  
+  &:hover {
+    background-color: #eb62be;
+  }
+
+  &:active {
+    background-color: #f18fd1;
+  }
+}

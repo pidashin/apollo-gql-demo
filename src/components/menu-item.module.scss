@@ -1,0 +1,24 @@
+@import '../common.scss';
+
+@mixin menuItem {
+  flex-grow: 1;
+  width: 0;
+  font-family: inherit;
+  font-size: 20px;
+  color: inherit;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+
+  svg {
+    display: block;
+    width: 60px;
+    margin: 0 auto $unit;
+    fill: $secondary;
+  }
+}
+
+.menuItem {
+  @include menuItem;
+  text-decoration: none;
+}

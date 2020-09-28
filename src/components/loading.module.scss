@@ -1,0 +1,21 @@
+@import '../common.scss';
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  height: 64px;
+  width: 64px;
+  display: block;
+  margin: auto;
+  fill: $grey;
+
+  path {
+    transform-origin: center;
+    animation: spin 1s linear infinite;
+  }
+
+}

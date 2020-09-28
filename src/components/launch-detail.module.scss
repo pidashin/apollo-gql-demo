@@ -1,0 +1,8 @@
+@import '../common.scss';
+@import './launch-tile.module.scss';
+
+.card {
+  @include card;
+  height: 365px;
+  margin-bottom: $unit * 4;
+}

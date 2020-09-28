@@ -1,0 +1,21 @@
+@import '../common.scss';
+
+@mixin card {
+  padding: $unit * 4 $unit * 5;
+  border-radius: 7px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.link {
+  @include card;
+  display: block;
+  height: 193px;
+  margin-top: $unit * 2;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-bottom: $unit * 4;
+  }
+}

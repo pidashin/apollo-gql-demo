@@ -1,0 +1,20 @@
+@import '../common.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: $unit * 4.5;
+}
+
+.img {
+  height: 134px;
+  width: 134px;
+  margin-right: $unit * 2.5;
+  border-radius: 50%;
+}
+
+.subHeading {
+  margin-top: $unit / 2;
+  color: $textSecondary;
+}
+

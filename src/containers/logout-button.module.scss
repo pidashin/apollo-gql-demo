@@ -1,0 +1,9 @@
+@import '../common.scss';
+@import '../components/menu-item.module.scss';
+
+.logoutBtn {
+  @include menuItem;
+  background: none;
+  border: none;
+  padding: 0;
+}
