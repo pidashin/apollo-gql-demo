@@ -11,6 +11,9 @@ module.exports = {
             limit: 8192,
             name(resourcePath, resourceQuery) {
               let finalPath = resourcePath.replace(/^.*public\\/, '').replace(/\\/g, '/')
+              if(/\//.test(resourcePath)) {
+                finalPath = resourcePath.replace(/^.*public\//, '').replace(/\//g, '/')
+              }
               return `${finalPath}`
             },
             publicPath: '/'
